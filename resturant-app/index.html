@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khadija's Food</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+<div id="loginPage">
+  <div class="login-box">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Enter Email">
+    <button onclick="login()">Login</button>
+  </div>
+</div>
+
+<!-- MAIN WEBSITE -->
+<div id="main" style="display:none;">
+
+<header>
+  <h1>Khadija's Food</h1>
+
+  <nav>
+    <a onclick="showHome()">Home</a>
+    <a onclick="toggleAbout()">About</a>
+    <a onclick="showFav()">Favorites</a>
+    <a onclick="showCart()">Cart 🛒</a>
+  </nav>
+</header>
+
+<!-- BANNER -->
+<div class="banner">
+  Best Food in Karachi 🍔🔥
+</div>
+
+<!-- ABOUT -->
+<div id="about">
+  <h2>About Us</h2>
+  <p>
+    Khadija's Food Karachi ka best restaurant hai jahan BBQ, Burger, Pizza aur drinks available hain.
+  </p>
+</div>
+
+<!-- FOOD LIST -->
+<div class="container" id="foodList"></div>
+
+<!-- CART -->
+<div id="cart" style="display:none;">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <h3 id="total"></h3>
+</div>
+
+<!-- FAVORITES -->
+<div id="fav" style="display:none;">
+  <h2>Your Favorites</h2>
+  <div id="favItems"></div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>www.khadijasfood.com</p>
+  <p>Instagram | Facebook | TikTok</p>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
